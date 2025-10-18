@@ -100,11 +100,21 @@ LEVELS = {
         'pawn_pos': 5,
         'orientation':[1,0,2,0,0,2,0,1,0]
     },
-    'expert-42': {
-        'board': ['>',"X" , RECT, None, '.', '*', RHOM, '+','='],
-        'pawn_pos': 0,
-        'orientation':[1,2,2,0,0,2,2,0,3]
+    # 'expert-42': {
+    #     'board': ['>',"X" , RECT, None, '.', '*', RHOM, '+','='],
+    #     'pawn_pos': 0,
+    #     'orientation':[1,2,2,0,0,2,2,0,3]
+    # },
+    'expert-11': {
+        'board': [RHOM,">" , '+', '*', '.',None, 'X', RECT,'='],
+        'pawn_pos': 6,
+        'orientation':[0,2,3,0,3,0,0,1,2]
     },
+    # 'expert-60': {
+    #     'board': ['>',"=" , None, '.', RECT, '*', RHOM, '+','X'],
+    #     'pawn_pos': 5,
+    #     'orientation':[2,1,0,2,3,0,2,1,3]
+    # },
 }
 
 def update_tiles_orientation(TILES,level_data,verbose=False):
